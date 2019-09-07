@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+// 定义颜色规范
+$mainColor: #3FABFF; // 主要颜色
+$contentBgcolor: #f4f4f4; //背景色
+$placeholderColor: #cecece; //placeholder提示颜色
+$borderColor: #ebedf0; //边框颜色
+$prohibitBtnBackground: #d9d9d9; // 禁止按钮背景颜色
+$normalBtnBackground: #3FABFF; // 正常按钮背景颜色
+// 正常背景渐变颜色
+$normalBgLinearGradient: linear-gradient(90deg,#32AFFA 0%,#318EFF 100%);
+$priceColor: #FA7138; // 价格颜色
+
+// 基本颜色
+$color000: #000;
+$colorfff: #fff;
+$color333: #333;
+$color666: #666;
+$color999: #999;
+$colorccc: #ccc;
+
+$imgSpacename: '../../assets/img/'; //图片地址空间
+$imgSpacename2: '../../../assets/img/'; //图片地址空间
+
+// 定义字体规范
+$font-size-small-s: 10px;
+$font-size-small: 12px;
+$font-size-medium: 14px;
+$font-size-medium-x: 16px;
+$font-size-large: 18px;
+$font-size-large-x: 22px;
+
+$btnDisabled:#D9D9D9; //铵钮禁用时颜色
+
+$detailTTBGColor: #F0F8FF;

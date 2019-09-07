@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+@svg square {
+    @rect {
+        fill: var(--color, black);
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@mixin border-1px {
+    background: $colorfff svg(square param(--color #efefef)) repeat-x left
+        bottom;
+    background-size: 100% 1px;
+}
+
+//滚动wrapper
+@mixin scroll-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0px;
+    width: 100%;
+    overflow: hidden;
+    background-color: $contentBgcolor;
+}
+
+// 居中盒子
+@mixin flex-box-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// 两端对齐盒子
+@mixin flex-box-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// 超出部分省略
+@mixin text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// 只显示两行超出部分省略
+@mixin line-clamp-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+// 跳转右箭头公共样式
+@mixin icon-arrow-right {
+    display: inline-block;
+    margin-left: 10px;
+    width: 8px;
+    height: 14px;
+    background: url(#{$imgSpacename}/icon/icon-arrow-right.png) center no-repeat;
+    background-size: 8px 14px;
+}
